@@ -1,25 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PhotoService } from './photos/photo/photo.service';
+import { Photo } from './photos/photo/photo';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'AluraPic'
 
-  photos = [
-    {
-      url: 'https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519__340.jpg',
-      description: 'Leão africano'
-    },
-    {
-      url: 'https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519__340.jpg',
-      description: 'Leão africano'
-    },
-    {
-      url: 'https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519__340.jpg',
-      description: 'Leão africano'
-    },
-  ]
+  photos: Photo[] = [];
+
+  constructor(private photoService: PhotoService) {  }
+
+  ngOnInit(): void {
+    this.photoService
+      .listFromUser('flavio')
+      .subscribe(photos => {
+        this.photos = photos;
+      })
+  }
 }
