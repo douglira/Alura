@@ -1,1 +1,13 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.nav-bar {
+  flex: 1 1 auto;
+  display: flex;
+  padding: 0 20px;
+}
+
+.nav-bar-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #666;
+}

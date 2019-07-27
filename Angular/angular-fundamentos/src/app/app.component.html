@@ -1,10 +1,14 @@
 <mat-toolbar>
   <span>{{ title }}</span>
+
+  <nav class="nav-bar">
+    <button mat-button>
+      <a class="nav-bar-link" routerLink="/" routerLinkActive="active">Home</a>
+    </button>
+    <button mat-button>
+      <a class="nav-bar-link" routerLink="/photos/form" routerLinkActive="active">Nova foto</a>
+    </button>
+  </nav>
 </mat-toolbar>
 
-<ap-photo
-  *ngFor="let photo of photos"
-  [url]="photo.url"
-  [description]="photo.description"
->
-</ap-photo>
+<router-outlet></router-outlet>
