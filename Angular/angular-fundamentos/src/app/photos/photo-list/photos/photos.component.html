@@ -1,0 +1,13 @@
+<ol class="list-photos">
+    <li
+      *ngFor="let cols of rows"
+      class="list-item-photo"
+    >
+      <ap-photo
+        *ngFor="let photo of cols"
+        [url]="photo.url"
+        [description]="photo.description"
+      >
+      </ap-photo>
+    </li>
+  </ol>
