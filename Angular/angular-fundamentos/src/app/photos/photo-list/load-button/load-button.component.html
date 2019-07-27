@@ -1,0 +1,11 @@
+<div class="container">
+    <button mat-icon-button *ngIf="hasMore; else messageTemplate">
+      <mat-icon aria-hidden="false" aria-label="Carregar">add</mat-icon>
+    </button>
+
+    <ng-template #messageTemplate>
+      <p class="has-more-message">
+        Não há mais fotos para carregar
+      </p>
+    </ng-template>
+</div>

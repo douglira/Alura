@@ -1,3 +1,13 @@
+.list-empty {
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 80px;
+  color: #666;
+}
+
 .list-photos {
   margin: 0;
   padding: 10px;

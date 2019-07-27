@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.has-more-message {
+  font-size: 16px;
+  color: #666;
+}

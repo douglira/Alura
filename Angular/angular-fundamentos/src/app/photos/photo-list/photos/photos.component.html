@@ -1,3 +1,6 @@
+<p *ngIf="!photos.length" class="list-empty">
+  Nenhuma foto encontrada...
+</p>
 <ol class="list-photos">
     <li
       *ngFor="let cols of rows"
