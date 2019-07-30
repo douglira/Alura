@@ -21,3 +21,26 @@
   padding: 20px 0;
   max-height: 250px;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-actions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.photo-action-button {
+  margin-left: 5px;
+  background-color: transparent;
+}
+
+.photo-action-button span {
+  font-size: 16px;
+  color: #333;
+}

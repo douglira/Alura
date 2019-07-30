@@ -1,0 +1,12 @@
+<div>
+    <form>
+      <input
+        class="input-filter"
+        type="search"
+        placeholder="Buscar..."
+        autofocus
+        (keyup)="debounce.next($event.target.value)"
+        [value]="filter"
+      >
+    </form>
+  </div>

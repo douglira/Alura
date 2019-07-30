@@ -7,10 +7,19 @@
       class="list-item-photo"
     >
       <ap-photo
+        style="padding: 20px 10px"
         *ngFor="let photo of cols"
         [url]="photo.url"
         [description]="photo.description"
       >
       </ap-photo>
+        <!-- <button class="photo-action-button" mat-icon-button>
+          <mat-icon aria-hidden="false" aria-label="Carregar">thumb_up_alt</mat-icon>
+        </button>
+        <span>{{ photo.likes }}</span>
+        <button class="photo-action-button" mat-icon-button>
+          <mat-icon aria-hidden="false" aria-label="Carregar">mode_comment</mat-icon>
+        </button>
+        <span>{{ photo.comments }}</span> -->
     </li>
   </ol>

@@ -1,0 +1,12 @@
+.input-filter {
+  font-size: 16px;
+  color: #666;
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #F1F1F1;
+  outline: none;
+}
