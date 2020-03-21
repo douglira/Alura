@@ -104,11 +104,9 @@
 (println "Função como parâmetro")
 (println (valor-descontado mais-caro-que-100? 1000))
 (println (valor-descontado mais-caro-que-100? 100))
-
 (println "Função anônima")
 (println (valor-descontado (fn [valor-bruto] (> valor-bruto 100)) 1000))
 (println (valor-descontado (fn [valor-bruto] (> valor-bruto 100)) 100))
-
 (println "Função anônima (Lambdas)")
 (println (valor-descontado #(> %1 100) 1000))
 (println (valor-descontado #(> % 100) 100))
