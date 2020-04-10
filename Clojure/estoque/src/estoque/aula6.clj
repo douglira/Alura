@@ -48,7 +48,7 @@
 ; THREAD LAST - encadeando as chamadas de acesso ao MapEntry e
 ; passando a coleção como último argumento de cada chamada. Neste
 ; caso as chamadas são: map e reduce. Como essas duas chamadas esperam
-; como primeiro argumento a coleção e segundo argumento a função, temos
+; como primeiro argumento a função e segundo argumento a coleção, temos
 ; que realizar a anotação para thread last.
 (defn total-do-pedido
   [pedido]
